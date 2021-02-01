@@ -76,7 +76,7 @@ async def reload_json(server_id):
         except:
             rank = 'Error'
             url = generate_url(ID)
-        await asyncio.sleep(2)
+        await asyncio.sleep(1)
         data[ID] = {'rank': rank, 'link': url}
     write_json(data, server_id)
 
